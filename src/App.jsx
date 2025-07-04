@@ -1,10 +1,11 @@
-import './App.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutPage />,
+  },
+  {
+    path: "/products",
+    element: <ProductsPage />,
+  },
+  {
+    path: "/products/:productId",
+    element: <ProductDetailPage />,
   },
 ]);
 

@@ -23,7 +23,7 @@ function HomePage() {
 
   return (
     <>
-      <h1>Hello Developers {count}</h1>
+      <h1 className='text-red-500'>Hello Developers {count}</h1>
       <button onClick={handleClick}>Click me</button>
       <button>Go to about page</button>
       {/* <NavLink>about page</NavLink> */}
