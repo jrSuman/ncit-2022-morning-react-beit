@@ -1,15 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
+import { CartContext } from "../CartContext";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([])
 
+ 
+
   const fetchApi = () => {
-    console.log("api call")
+    // console.log("api call")
     fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
-      console.log('data', data)
+      // console.log('data', data)
       setProducts(data)
     })
   }
@@ -33,6 +36,7 @@ const ProductsPage = () => {
           ))
         }
       </div>
+      {/* <span>{tempItem.name}</span> */}
     </div>
   );
 };
