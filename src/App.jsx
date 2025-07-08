@@ -6,6 +6,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import RootLayout from "./RootLayout";
 import { CartContext } from "./CartContext";
 import { useState } from "react";
+import ProductsPageTwo from "./pages/ProductsPageTwo";
 // import RootLayout from "./RootLayout";
 
 // const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <ProductsPage />,
+      },
+        {
+        path: "/products2",
+        element: <ProductsPageTwo />,
       },
       {
         path: "/products/:productId",

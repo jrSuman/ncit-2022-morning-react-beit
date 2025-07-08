@@ -18,11 +18,12 @@ const RootLayout = () => {
             <li>
               <Link to='/'>Home</Link>
             </li>
-            <li>About</li>
             <li>
               <Link to='/products'>Products</Link>
             </li>
-            <li>GAllery</li>
+            <li>
+              <Link to='/products2'>Products 2</Link>
+            </li>
           </ul>
         </div>
         {/* carts */}
